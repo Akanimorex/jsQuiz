@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		/*input[type="radio"]{
+
+			display:block;
+
+		}*/
+		body{
+			background-color:black;
+			
+		}
+
+		.card{
+			background-color:white;
+			width:500px;
+			padding-bottom: 5%;
+			padding-top: 5%;
+		}
+		.slide{
+		  position: absolute;
+		  left: 0px;
+		  top: 0px;
+		  width: 100%;
+		  z-index: -1;
+		  opacity: 0;
+		  transition: opacity 0.5s;
+		}
+		.active-slide{
+		  opacity: 1;
+		  z-index: 2;
+		}
+
+		input[type="submit"]{
+
+			margin-top:3%;
+			background-color:#0080ff;
+			color:#fff;
+			border:none;
+			font-size:20px;
+			font-family: Montserrat;
+			border-radius: 10px;
+
+		}
+
+		#compliment, #display{
+			color:#0080ff;
+
+		}
+
+
+		/*.quiz-container{
+		  position: relative;
+		  height: 200px;
+		  margin-top: 40px;
+		}*/
+	</style>
+</head>
+<body>
+	<center>
+		<div class="card">
+
+			<h1 id="compliment"></h1>
+
+			<h3 id="display"> </h3>
+
+
+
+			<div id="first" >	
+
+				<strong><p>1.Who is dubbed "the GOAT"?</p></strong>
+
+				<input type="radio" name="q1" value="Robben">Robben
+				<input type="radio" name="q1" value="Ronaldo">Ronaldo
+				<input type="radio" name="q1" value="Messi" id="correct1">Messi
+				<input type="radio" name="q1" value="Neymar">Neymar<br><br>
+
+			</div>
+	
+
+			<div  id="others" class="slide">
+				<strong><p>2. what is the largest continent on the planet?</p></strong>
+				<input type="radio" name="q2" value="South America">South America
+				<input type="radio" name="q2" value="Africa" id="correct2">Africa
+				<input type="radio" name="q2" value="Antartica">Antartica
+				<input type="radio" name="q2" value="Australia">Australia<br><br>
+
+
+				<strong><p>3. who is the strongest of them all?</p></strong>
+				<input type="radio" name="q3" value="superman">superman
+				<input type="radio" name="q3" value="hulk" id="correct3">Hulk
+				<input type="radio" name="q3" value="Aquaman">Aquaman
+				<input type="radio" name="q3" value="shazam">shazam<br>
+
+			</div>
+
+			<button id="previous">Previous question</button>
+			<button id="next">Next question</button><br>
+
+			<input type="submit" name="" value="submit" id="done">
+		</div>
+	</center>
+
+
+<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+</html>       
